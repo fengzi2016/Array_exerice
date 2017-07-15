@@ -5,15 +5,15 @@ var create_updated_collection = require("../../practices/section_3/practice_1/pr
 describe('practice-3-1', function() {
 
   var collection_a = [
-    {key: "a", count: 2},
-    {key: "e", count: 2},
-    {key: "h", count: 2},
-    {key: "t", count: 2},
-    {key: "f", count: 2},
-    {key: "c", count: 2},
-    {key: "g", count: 2},
-    {key: "b", count: 2},
-    {key: "d", count: 2}
+    {name: "a", summary: 2},
+    {name: "e", summary: 2},
+    {name: "h", summary: 2},
+    {name: "t", summary: 2},
+    {name: "f", summary: 2},
+    {name: "c", summary: 2},
+    {name: "g", summary: 2},
+    {name: "b", summary: 2},
+    {name: "d", summary: 2}
   ];
 
   var object_b = {value: ["a", "d", "e", "f"]};
@@ -22,15 +22,15 @@ describe('practice-3-1', function() {
     var result = create_updated_collection(collection_a, object_b);
 
     expect(result).toEqual([
-      {key: "a", count: 1},
-      {key: "e", count: 1},
-      {key: "h", count: 2},
-      {key: "t", count: 2},
-      {key: "f", count: 1},
-      {key: "c", count: 2},
-      {key: "g", count: 2},
-      {key: "b", count: 2},
-      {key: "d", count: 1}
+      {name: "a", summary: 1},
+      {name: "e", summary: 1},
+      {name: "h", summary: 2},
+      {name: "t", summary: 2},
+      {name: "f", summary: 1},
+      {name: "c", summary: 2},
+      {name: "g", summary: 2},
+      {name: "b", summary: 2},
+      {name: "d", summary: 1}
     ]);
   });
 });

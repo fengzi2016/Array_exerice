@@ -5,7 +5,7 @@ var collect_same_elements = require("../../practices/section_1/practice_4/practi
 describe('practice-1-4', function() {
 
   var collection_a = [
-    {key: "a"}, {key: "e"}, {key: "h"}, {key: "t"}, {key: "f"}, {key: "c"}, {key: "g"}, {key: "b"}, {key: "d"}
+    {name: "a"}, {name: "e"}, {name: "h"}, {name: "t"}, {name: "f"}, {name: "c"}, {name: "g"}, {name: "b"}, {name: "d"}
   ];
   var collection_b = {value: ["a", "d", "e", "f"]};
 
