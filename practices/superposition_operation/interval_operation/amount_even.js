@@ -1,8 +1,11 @@
 'use strict';
-
 function amount_even(collection) {
-
-  //在这里写入代码
+  let evenArr=collection.filter(function (number) {
+    return number%2===0;
+  })
+  return evenArr.reduce(function (sum,value) {
+    return sum+value;
+  });
 }
 
 module.exports = amount_even;

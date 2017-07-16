@@ -1,8 +1,11 @@
 'use strict';
 
 function even_to_letter(collection) {
-
-  //在这里写入代码
+  let evenArr=collection.filter(function (number) {
+    return number%2===0;
+  });
+  return evenArr.map(function (number) {
+    return  String.fromCharCode(96+number);
+  });
 }
-
 module.exports = even_to_letter;
