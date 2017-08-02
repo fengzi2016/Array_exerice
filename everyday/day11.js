@@ -67,3 +67,6 @@ function good(num,str) {
     return result[0];
 }
 console.log(good('20','19201234567891011121314151618'));
+let i=1;
+i.toString();
+console.log(typeof i);
